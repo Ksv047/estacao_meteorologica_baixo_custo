@@ -1,7 +1,7 @@
 
 # 🌦️ Estação Meteorológica 3D de Baixo Custo – IFC Camboriú
 
-![Estação montada](estacao_montada.jpeg)
+![Estação montada](IMAGES/estacao_montada.jpeg)
 
 ##  Sobre o Projeto
 
