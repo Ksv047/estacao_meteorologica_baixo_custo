@@ -38,13 +38,13 @@ A proposta é criar uma estação **acessível, precisa e replicável**, utiliza
 
 ##  Estrutura Física
 
-A estrutura foi **impressa em 3D (FDM) desenhada para:
+A estrutura foi impressa em 3D e desenhada para:
 - Resistir à chuva e ventos;
 - Ser montada por encaixe e rosca;
 - Reduzir o número de partes e o tempo de impressão;
-- Permitir fixação em haste de suporte.
+- Permitir fixação em haste de suporte;
 
-Arquivos STL disponíveis em [`3d_models`](3d_models).
+Arquivos STL disponíveis em [`3d_models`](HARDWARE/3D_MODELS).
 
 ---
 
@@ -53,19 +53,19 @@ Arquivos STL disponíveis em [`3d_models`](3d_models).
 A estação utiliza comunicação **Wi-Fi** para envio de dados ao **ThingsBoard** por meio de requisições HTTP.  
 Futuramente, está prevista a integração com **LoRa (SX1278)**, visando maior alcance e menor consumo energético.
 
-Mais informações em [`docs/comunicacao.md`](docs/comunicacao.md).
+Mais informações em [`docs/comunicacao.md`](FIRMWARE/Thingsboard/thingsboard.http).
 
 ---
 
 ## 🧠 Firmware
 
-O código-fonte está em [`firmware/src`](firmware/src).
+O código-fonte está em [`firmware/src`](FIRMWARE/main/codigo_estacao.ino).
 
 Funções principais:
 - Leitura dos sensores (BME280, AS5600, reed switch);
 - Cálculo de chuva e vento;
 - Envio de dados via HTTP;
-- Modo de sono para economia de energia.
+- Modo de sono para economia de energia (deepsleep).
 
 ---
 
@@ -76,7 +76,7 @@ Funções principais:
 | 15/10/2025 10:00 | 27.3 | 68 | 1012 | 0.0 |
 | 15/10/2025 11:00 | 28.1 | 66 | 1011 | 0.2 |
 
-Mais exemplos em [`data/exemplos_medicoes.csv`](data/exemplos_medicoes.csv)
+Mais exemplos em [`data/exemplos_medicoes.csv`](DATA/painel_thingsboard.png)
 
 ---
 
