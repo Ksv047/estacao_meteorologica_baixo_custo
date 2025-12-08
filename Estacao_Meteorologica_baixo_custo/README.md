@@ -53,7 +53,7 @@ Arquivos STL disponíveis em [`3d_models`](HARDWARE/3D_MODELS).
 A estação utiliza comunicação **Wi-Fi** para envio de dados ao **ThingsBoard** por meio de requisições HTTP.  
 Futuramente, está prevista a integração com **LoRa (SX1278)**, visando maior alcance e menor consumo energético.
 
-Mais informações em [`docs/comunicacao.md`](FIRMWARE/Thingsboard/thingsboard.http).
+Mais informações em [`docs/comunicacao.md`](FIRMWARE/Thinsboard/thingsboard.http).
 
 ---
 
