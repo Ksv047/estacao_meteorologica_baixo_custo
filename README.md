@@ -1,7 +1,7 @@
 
 # 🌦️ Estação Meteorológica 3D de Baixo Custo – IFC Camboriú
 
-![Estação montada](IMAGES/estacao_montada.jpeg)
+![Estação montada](images/estacao_montada.jpeg)
 
 ##  Sobre o Projeto
 
@@ -44,7 +44,7 @@ A estrutura foi impressa em 3D e desenhada para:
 - Reduzir o número de partes e o tempo de impressão;
 - Permitir fixação em haste de suporte;
 
-Arquivos STL disponíveis em [`3d_models`](HARDWARE/3D_MODELS).
+Arquivos STL disponíveis em [`3d_models`](hardware/3D_MODELS).
 
 ---
 
@@ -53,13 +53,13 @@ Arquivos STL disponíveis em [`3d_models`](HARDWARE/3D_MODELS).
 A estação utiliza comunicação **Wi-Fi** para envio de dados ao **ThingsBoard** por meio de requisições HTTP.  
 Futuramente, está prevista a integração com **LoRa (SX1278)**, visando maior alcance e menor consumo energético.
 
-Mais informações em [`docs/comunicacao.md`](FIRMWARE/Thinsboard/thingsboard.http).
+Mais informações em [`docs/comunicacao.md`](firmware/Thinsboard/thingsboard.http).
 
 ---
 
 ## 🧠 Firmware
 
-O código-fonte está em [`firmware/src`](FIRMWARE/main/codigo_estacao.ino).
+O código-fonte está em [`firmware/src`](firmware/main/codigo_estacao.ino).
 
 Funções principais:
 - Leitura dos sensores (BME280, AS5600, reed switch);
@@ -76,7 +76,7 @@ Funções principais:
 | 15/10/2025 10:00 | 27.3 | 68 | 1012 | 0.0 |
 | 15/10/2025 11:00 | 28.1 | 66 | 1011 | 0.2 |
 
-Mais exemplos em [`data/exemplos_medicoes.csv`](DATA/painel_thingsboard.png)
+Mais exemplos em [`data/exemplos_medicoes.csv`](data/painel_thingsboard.png)
 
 ---
 
